@@ -1,7 +1,7 @@
 <p>
   recipe-detail works!
 </p>
-<!-- <div class="row">
+<div class="row">
   <div class="col-xs-12">
     <img 
       [src]="recipe.imagePath" 
@@ -12,7 +12,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    Menage recipes
+    <h1>{{ recipe.name }}</h1>
   </div>
 </div>
 <div class="row">
@@ -22,6 +22,27 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    ingredients
+    <div class="btn-group" appDropdown>
+      <button 
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Recipe <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" routerLink="edit">Edit Recipe</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
   </div>
-</div> -->
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item"
+        *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.name }} ({{ ingredient.amount }})
+      </li>
+    </ul>
+  </div>
+</div>

@@ -22,7 +22,6 @@ export class RecipeDetailComponent implements OnInit {
         this.recipe = this.recipeServ.getRecipe(this.id);
       }
     );
-    console.log(this.recipe);
   }
 
 }
