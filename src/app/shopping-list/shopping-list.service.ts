@@ -9,8 +9,8 @@ export class ShoppingListService {
   ingredientsChanged = new EventEmitter<Ingredient[]>();
 
   private ingredients: Ingredient[] = [
-    new Ingredient('krastavac', 2),
-    new Ingredient('paradajz', 4),
+    // new Ingredient('krastavac', 2),
+    // new Ingredient('paradajz', 4),
   ];
 
   constructor() { }
@@ -27,6 +27,7 @@ export class ShoppingListService {
     this.ingredients.push(...ingredients);
   }
 
+  // salje sastojak u soping listu kliko na checkbox
   addSingleIngredient(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
     this.ingredientsChanged.emit(this.ingredients);

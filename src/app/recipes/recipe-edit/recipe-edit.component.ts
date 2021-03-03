@@ -14,6 +14,7 @@ export class RecipeEditComponent implements OnInit {
   recipeForm: FormGroup;
   id: number;
   editMode = false;
+  toAddIngredient = false;
 
   constructor(private route: ActivatedRoute,
               private recipeServ: RecipeService,
@@ -48,7 +49,7 @@ export class RecipeEditComponent implements OnInit {
               'name': new FormControl(ingredient.name, Validators.required),
               'amount': new FormControl(ingredient.amount, [
                 Validators.required,
-                Validators.pattern(/^[1-9]+[0-9]*$/)
+                // Validators.pattern(/^[1-9]+[0-9]*$/)
               ])
             })
           );          
@@ -69,6 +70,7 @@ export class RecipeEditComponent implements OnInit {
       this.recipeForm.value.name,
       this.recipeForm.value.description,
       this.recipeForm.value.imagePath,
+      this.recipeForm.value.steps,
       this.recipeForm.value.ingredients,
     );
     if (this.editMode) {
@@ -88,6 +90,7 @@ export class RecipeEditComponent implements OnInit {
         Validators.pattern(/^[1-9]+[0-9]*$/)
       ])
     }));
+    this.toAddIngredient = true;
   }
 
   deleteIngredient(index: number) {

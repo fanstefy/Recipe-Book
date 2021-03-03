@@ -12,35 +12,39 @@ export class RecipeService {
   private recipes = [
     new Recipe(
       "Pica",
-      "Ljuta pica sa kulenom",
+      "Ljuta pica sa kulenom",      
       "http://gojkospizza.rs/wp-content/uploads/2020/04/madjarica-bolja-copy-u1574.png",
       [
-        new Ingredient("kecap", 1),
-        new Ingredient("kackavalj", 2),
-        new Ingredient("kulen", 10),
-        new Ingredient("brasno", 3),
-      ]
-    ),
-    new Recipe(
-      "Torta",
-      "Ukrasna torta sa ukrasima",
-      "https://www.stvarukusa.rs/wp-content/uploads/2014/12/nova_godina_torta-1.jpg",
+        "Place beef roast in crock pot.",
+        "Mix the dried mixes together in a bowl and sprinkle over the roast.",
+        "Pour the water around the roast.",
+        "Cook on low for 7-9 hours."
+      ],
       [
-        new Ingredient("brasno", 1),
-        new Ingredient("secer", 1),
-        new Ingredient("cokolada", 2)
+        {
+          "amount": "1",
+          "name": "beef roast",
+        },
+        {
+          "amount": "1 package",
+          "name": "brown gravy mix",
+        },
+        {
+          "amount": "1 package",
+          "name": "dried Italian salad dressing mix",
+        },
+        {
+          "amount": "1 package",
+          "name": "dry ranch dressing mix",
+        },
+        {
+          "amount": "1/2 cup",
+          "name": "water",
+        }
       ]
     ),
-    new Recipe(
-      "Spagete",
-      "Spagete sa bolonjeze sosom",
-      "http://mladostle.com/wp-content/uploads/2018/03/mladost-spaghetti-bolognese.jpg",
-      [
-        new Ingredient("spagete", 1),
-        new Ingredient("mleveno meso", 5),
-        new Ingredient("mocarela", 2)
-      ]
-    ),
+
+
   ];
 
   constructor(private slService: ShoppingListService) { }
