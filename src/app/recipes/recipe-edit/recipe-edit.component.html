@@ -94,8 +94,27 @@
               <button (click)="deleteIngredient(i)" class="btn btn-danger">X</button>
             </div>
           </div>
-          <hr>
+          <br>
           <button type="button" class="btn btn-primary" style="margin-bottom: 15px;" (click)="addIngredient()">Add Ingredient</button>
+          <hr>          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12" formArrayName="steps">
+          <h4>Steps:</h4>
+          <div class="row"
+            *ngFor="let stepControl of recipeForm.get('steps').controls; let i=index"
+            [formGroupName]="i"
+            style="margin-top: 10px;">
+            <div class="col-xs-10">
+              <input 
+                type="text"
+                class="form-control"
+                formControlName="step">
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary" (click)="addStep()">+</button>
         </div>
       </div>
     </form>

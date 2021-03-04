@@ -1,6 +1,14 @@
 [
     {
         "name": "Crock Pot Roast",
+        "descrition": "Ultimate Slow Cooker Pot Roast that leaves you with tender meat, vegetables and a built in gravy to enjoy them all with in just 15 minutes of prep! Perfect weeknight dinner!", 
+        "steps": [
+            "Place beef roast in crock pot.",
+            "Mix the dried mixes together in a bowl and sprinkle over the roast.",
+            "Pour the water around the roast.",
+            "Cook on low for 7-9 hours."
+        ],
+        "imagePath": "https://amindfullmom.com/wp-content/uploads/2016/01/Pot-Roast-Crock-Pot.jpg",
         "ingredients": [
             {
                 "quantity": "1",
@@ -27,21 +35,7 @@
                 "name": "water",
                 "type": "Drinks"
             }
-        ],
-        "steps": [
-            "Place beef roast in crock pot.",
-            "Mix the dried mixes together in a bowl and sprinkle over the roast.",
-            "Pour the water around the roast.",
-            "Cook on low for 7-9 hours."
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            420
-        ],
-        "imageURL": "https://amindfullmom.com/wp-content/uploads/2016/01/Pot-Roast-Crock-Pot.jpg",
-        "originalURL": "http://www.food.com/recipe/to-die-for-crock-pot-roast-27208"
+        ]        
     },
     {
         "name": "Roasted Asparagus",

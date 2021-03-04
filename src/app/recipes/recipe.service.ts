@@ -11,9 +11,9 @@ export class RecipeService {
 
   private recipes = [
     new Recipe(
-      "Pica",
-      "Ljuta pica sa kulenom",      
-      "http://gojkospizza.rs/wp-content/uploads/2020/04/madjarica-bolja-copy-u1574.png",
+      "Crock Pot Roast",
+      "Ultimate Slow Cooker Pot Roast that leaves you with tender meat, vegetables and a built in gravy to enjoy them all with in just 15 minutes of prep! Perfect weeknight dinner!",      
+      "https://amindfullmom.com/wp-content/uploads/2016/01/Pot-Roast-Crock-Pot.jpg",
       [
         "Place beef roast in crock pot.",
         "Mix the dried mixes together in a bowl and sprinkle over the roast.",

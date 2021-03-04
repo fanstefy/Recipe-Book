@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { Ingredient } from '../../shared/ingredient.model';
 import { Recipe } from '../recipe.model';
 import { RecipeService } from '../recipe.service';
 
@@ -35,6 +34,7 @@ export class RecipeEditComponent implements OnInit {
     let recipeName = '';
     let imagePath = '';
     let description = '';
+    let recipeSteps = new FormArray([]);
     let recipeIngredients = new FormArray([]);
 
     if (this.editMode) {
@@ -54,23 +54,35 @@ export class RecipeEditComponent implements OnInit {
             })
           );          
         }
-      }
+      }          
+      if (recipe.steps) {
+        for (let step of recipe.steps) {          
+          recipeSteps.push(new FormGroup({
+            'step': new FormControl(step, Validators.required)
+          }));
+        }
+      }  
     }
 
     this.recipeForm = new FormGroup({
       'name': new FormControl(recipeName, Validators.required),
       'imagePath': new FormControl(imagePath, Validators.required),
       'description': new FormControl(description, Validators.required),
+      'steps': recipeSteps,
       'ingredients': recipeIngredients,
     });
   }
 
   onSubmit() {    
+    let stepsArray = [];
+    this.recipeForm.value.steps.forEach(element => {
+      stepsArray.push(element.step);
+    }); 
     const newRecipe = new Recipe(
       this.recipeForm.value.name,
       this.recipeForm.value.description,
       this.recipeForm.value.imagePath,
-      this.recipeForm.value.steps,
+      stepsArray,
       this.recipeForm.value.ingredients,
     );
     if (this.editMode) {
@@ -79,9 +91,9 @@ export class RecipeEditComponent implements OnInit {
       this.recipeServ.addNewRecipe(newRecipe);
     }
     this.cancelEdit();
-    console.log(newRecipe);
   }
 
+  // Dodaj sastojke
   addIngredient() {
     (<FormArray>this.recipeForm.get('ingredients')).push(new FormGroup({
       'name': new FormControl(null, Validators.required),
@@ -91,6 +103,13 @@ export class RecipeEditComponent implements OnInit {
       ])
     }));
     this.toAddIngredient = true;
+  }
+
+  // Dodaj korake pripreme
+  addStep() {
+    (<FormArray>this.recipeForm.get('steps')).push(new FormGroup({
+      'step': new FormControl(null, Validators.required),
+    }));
   }
 
   deleteIngredient(index: number) {
