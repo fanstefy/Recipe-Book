@@ -1,13 +1,8 @@
-[
+{
+"recipes": [
     {
         "name": "Crock Pot Roast",
-        "descrition": "Ultimate Slow Cooker Pot Roast that leaves you with tender meat, vegetables and a built in gravy to enjoy them all with in just 15 minutes of prep! Perfect weeknight dinner!", 
-        "steps": [
-            "Place beef roast in crock pot.",
-            "Mix the dried mixes together in a bowl and sprinkle over the roast.",
-            "Pour the water around the roast.",
-            "Cook on low for 7-9 hours."
-        ],
+        "description": "Ultimate Slow Cooker Pot Roast that leaves you with tender meat, vegetables and a built in gravy to enjoy them all with in just 15 minutes of prep! Perfect weeknight dinner!",         
         "imagePath": "https://amindfullmom.com/wp-content/uploads/2016/01/Pot-Roast-Crock-Pot.jpg",
         "ingredients": [
             {
@@ -30,11 +25,17 @@
                 "amount": "1/2 cup",
                 "name": "water"                
             }
-        ]        
+        ],
+        "steps": [
+            "Place beef roast in crock pot.",
+            "Mix the dried mixes together in a bowl and sprinkle over the roast.",
+            "Pour the water around the roast.",
+            "Cook on low for 7-9 hours."
+        ]    
     },
     {
         "name": "Roasted Asparagus",
-        "descrition": "Roasted asparagus in the oven is one of the easiest way to prepare asparagus.",
+        "description": "Roasted asparagus in the oven is one of the easiest way to prepare asparagus.",
         "imagePath": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/3/24/0/IG1B08_Parmesan-Roasted-Asparagus_s4x3.jpg.rend.hgtvcom.826.620.suffix/1591822424606.jpeg",
         "ingredients": [
             {
@@ -65,7 +66,7 @@
     },
     {
         "name": "Curried Lentils and Rice",
-        "descrition": "Curry powder is not a common ingredient used in traditional Indian cooking, but rather an invention of the British to evoke the flavors of Indian cuisine.",
+        "description": "Curry powder is not a common ingredient used in traditional Indian cooking, but rather an invention of the British to evoke the flavors of Indian cuisine.",
         "imagePath": "http://dagzhsfg97k4.cloudfront.net/wp-content/uploads/2012/05/lentils3.jpg",
         "ingredients": [
             {
@@ -99,7 +100,7 @@
     },
     {
         "name": "Big Night Pizza",
-        "descrition": "A pizza base with a tomato sauce topped with mozzarella and Cheddar cheese and Pepperoni",
+        "description": "A pizza base with a tomato sauce topped with mozzarella and Cheddar cheese and Pepperoni",
         "imagePath": "http://upload.wikimedia.org/wikipedia/commons/c/c7/Spinach_pizza.jpg",
         "ingredients": [
             {
@@ -147,7 +148,7 @@
     },
     {
         "name": "Cranberry and Apple Stuffed Acorn Squash Recipe",
-        "descrition": "This cranberry apple stuffed acorn squash is a perfect side dish or vegetarian meal.",
+        "description": "This cranberry apple stuffed acorn squash is a perfect side dish or vegetarian meal.",
         "imagePath": "http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg",
         "ingredients": [
             {
@@ -188,7 +189,7 @@
     },
     {
         "name": "Mic's Yorkshire Puds",
-        "descrition": "The secret to getting gloriously puffed-up Yorkshire puddings is to have the fat sizzling hot and don't open the oven door!",
+        "description": "The secret to getting gloriously puffed-up Yorkshire puddings is to have the fat sizzling hot and don't open the oven door!",
         "imagePath": "http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg",
         "ingredients": [
             {
@@ -222,8 +223,8 @@
     },
     {
         "name": "Old-Fashioned Oatmeal Cookies",
-        "descrition": "",
-        "imagePah": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
+        "description": "Quaker’s Best Oatmeal Cookies taste just like grandma used to make. This classic cookie is full of flavor with a hint of cinnamon and nutmeg.",
+        "imagePath": "http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg",
         "ingredients": [
             {
                 "amount": "1 cup",
@@ -289,7 +290,7 @@
     },
     {
         "name": "Blueberry Oatmeal Squares",
-        "descrition": "These blueberry oatmeal bars are just the right amount of sweet with their juicy blueberry filling, soft and buttery oatmeal crust, and golden crumb topping!",
+        "description": "These blueberry oatmeal bars are just the right amount of sweet with their juicy blueberry filling, soft and buttery oatmeal crust, and golden crumb topping!",
         "imagePath": "https://ifoodreal.com/wp-content/uploads/2015/05/FG-blueberry-crumb-bars-clean-eating-recipes.jpg",
         "ingredients": [
             {
@@ -346,7 +347,7 @@
     },
     {
         "name": "Curried chicken salad",
-        "descrition": "This Curry Chicken Salad is perfect when you’re looking for new flavor variations from a classic chicken salad. It’s great for lunches, picnics, or for keeping on hand in the fridge!",
+        "description": "This Curry Chicken Salad is perfect when you’re looking for new flavor variations from a classic chicken salad. It’s great for lunches, picnics, or for keeping on hand in the fridge!",
         "imagePath": "http://www.chatelaine.com/wp-content/uploads/2013/05/Curried-chicken-salad.jpg",
         "ingredients": [
             {
@@ -411,3 +412,4 @@
         ]                
     }
 ]
+}

@@ -1,0 +1,4 @@
+#list-of-items {
+    overflow-y: overlay;
+    max-height: 700px;
+}

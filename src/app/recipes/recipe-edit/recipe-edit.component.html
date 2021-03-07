@@ -112,6 +112,9 @@
                 class="form-control"
                 formControlName="step">
             </div>
+            <div class="col-xs-2">
+              <button (click)="deleteCookingStep(i)" class="btn btn-danger">X</button>
+            </div>
           </div>
           <br>
           <button type="button" class="btn btn-primary" (click)="addStep()">+</button>
